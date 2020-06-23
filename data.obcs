@@ -1,0 +1,75 @@
+#Open-boundaries
+ &OBCS_PARM01
+# OB_jnorth=150*150,
+# OB_Ieast=50*0,100*150,
+# OB_Iwest=50*0,100*1,
+ OB_Jnorth=150*150,
+ useOBCSprescribe=.true.,
+ useOBCSsponge=.true.,
+# OBWuFile='outflow.obw'
+# OBEuFile='inflow.obw'
+# OBWuFile='uvel.obw',
+# OBNuFile='inflow.obw',
+ OBNtFile='',
+ OBNsFile='', 
+# OBEsFile='salt.obw',
+# OBEtFile='theta.obw',
+# OBWsFile='salt.obw',
+# OBWtFile='theta.obw',
+#OBNptrFile(1)='tracerDIC.obn'
+#OBNptrFile(2)='tracerALK.obn'
+#OBNptrFile(3)='tracerPO4.obn'  
+#OBNptrFile(4)='tracerDOP.obn'
+#OBNptrFile(5)='tracerO2.obn'
+#OBNptrFile(6)='tracerFE.obn'
+
+#OBShFile='OBSh.seaice_obcs',
+# OBNhFile='OBNh.seaice_obcs',
+# OBEhFile='OBEh.seaice_obcs',
+# OBWhFile='OBWh.seaice_obcs',
+#OBSaFile='OBSa.seaice_obcs',
+# OBNaFile='OBNa.seaice_obcs',
+# OBEaFile='OBEa.seaice_obcs',
+# OBWaFile='OBWa.seaice_obcs',
+#OBSsnFile='OBSsn.seaice_obcs',
+# OBNsnFile='OBNsn.seaice_obcs',
+# OBEsnFile='OBEsn.seaice_obcs',
+# OBWsnFile='OBWsn.seaice_obcs',
+# OBSslFile='OBSsl.seaice_obcs',
+# OBNslFile='OBNsl.seaice_obcs',
+# OBEslFile='OBEsl.seaice_obcs',
+# OBWslFile='OBWsl.seaice_obcs',
+#OBSuiceFile='OBSuice.seaice_obcs',
+ OBNuiceFile='obcs_files/OBNuice.seaice_obc',
+# OBEuiceFile='OBEuice.seaice_obcs',
+# OBWuiceFile='OBWuice.seaice_obcs',
+#OBSviceFile='OBSvice.seaice_obcs',
+ OBNviceFile='obcs_files/OBNvice.seaice_obc',
+# OBEviceFile='OBEvice.seaice_obcs',
+# OBWviceFile='OBWvice.seaice_obcs',
+ 
+ useOrlanskiNorth=.FALSE.,
+# useStevensEast=.true.,
+# useStevensWest=.true.,
+ &
+
+# Orlanski parameters
+ &OBCS_PARM02
+#Cmax=0.45,
+#cVelTimeScale=1000.,
+ &
+
+# Sponge layer parameters
+ &OBCS_PARM03
+ spongeThickness = 5,
+ Vrelaxobcsbound = 864000,
+# Urelaxobcsbound = 864000,
+ &
+
+#Stevens parameters
+ &OBCS_PARM04
+ TrelaxStevens=2635200.0,
+ SrelaxStevens=2635200.0,
+ useStevensPhaseVel=.true.,
+ useStevensAdvection=.true.,
+ &

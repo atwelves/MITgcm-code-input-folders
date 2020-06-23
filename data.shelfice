@@ -1,0 +1,20 @@
+# ===================================
+# | Parameters for SHELFICE package |
+# ===================================
+ &SHELFICE_PARM01
+ SHELFICEwriteState = .true.,
+#mult_shelfice=1.,
+#useISOMIPTD = .true.,
+ SHELFICEconserve = .true.,
+ SHELFICEboundaryLayer = .true.,
+ SHELFICEtopoFile='init_files/shelftopo.dot.bin', 
+# SHELFICEtopoFile='shelftopo.round.bin', 
+ SHELFICEloadAnomalyFile = 'init_files/pload.dot.jmd95z',
+#SHELFICEMassDynTendFile = 'massdyn_tend_cheese.bin',
+#SHELFICEmassFile = 'shelficemassinit.dot.bin',
+ SHELFICEuseGammaFrict = .false., 
+ SHELFICEDragQuadratic = 0.0015,
+ shiCdrag = 0.0015
+# SHELFICEMassStepping = .true.
+ SHELFICEheatTransCoeff = ,
+ & 

@@ -1,0 +1,79 @@
+RBCS package parameters:
+ &RBCS_PARM01
+#   tauRelaxT=864000.,
+#   tauRelaxS=864000.,
+#   relaxMaskFile='rbcs_mask_T.bin','rbcs_mask_S.bin',
+relaxMaskFile(3)='rbcs_files/north_mask.bin',
+relaxMaskFile(4)='rbcs_files/north_mask.bin',
+relaxMaskFile(5)='rbcs_files/north_mask.bin',
+relaxMaskFile(6)='rbcs_files/north_mask.bin',
+relaxMaskFile(7)='rbcs_files/north_mask.bin',
+relaxMaskFile(8)='rbcs_files/north_mask.bin',
+relaxMaskFile(9)='rbcs_files/north_mask.bin',
+relaxMaskFile(10)='rbcs_files/north_mask.bin',
+relaxMaskFile(11)='rbcs_files/north_mask.bin',
+relaxMaskFile(12)='rbcs_files/northWest_mask.bin',
+relaxMaskFile(13)='rbcs_files/north_mask.bin',
+relaxMaskFile(14)='rbcs_files/northWest_mask.bin',
+#   relaxTFile='sponge_temp.bin',
+#   relaxSFile='rbcs_Tr1_fld.bin',
+#   useRBCtemp=.TRUE.,
+#   useRBCsalt=.TRUE.,
+useRBCptracers=.TRUE.,
+#rbcsSingleTimeFiles=.TRUE.,
+rbcsForcingOffset=3952800.,
+rbcsForcingPeriod=2635200.,
+rbcsForcingCycle=31622400.,
+ &
+
+# RBCS for pTracers (read this namelist only when ptracers pkg is compiled)
+ &RBCS_PARM02
+
+  useRBCptrnum(1)    = .TRUE.,
+  tauRelaxPTR(1)     = 3600.,
+  relaxPtracerFile(1)='rbcs_files/dic_rbc.bin',
+
+  useRBCptrnum(2)    = .TRUE.,
+  tauRelaxPTR(2)     = 3600.,
+  relaxPtracerFile(2)='rbcs_files/alk_rbc.bin',
+
+  useRBCptrnum(3)    = .TRUE.,
+  tauRelaxPTR(3)     = 3600.,
+  relaxPtracerFile(3)='rbcs_files/o2_rbc.bin',
+
+  useRBCptrnum(4)    = .TRUE.,
+  tauRelaxPTR(4)     = 3600.,
+  relaxPtracerFile(4)='rbcs_files/no3_rbc.bin',
+
+  useRBCptrnum(5)    = .TRUE.,
+  tauRelaxPTR(5)     = 3600.,
+  relaxPtracerFile(5)='rbcs_files/po4_rbc.bin',
+
+  useRBCptrnum(6)    = 
+  tauRelaxPTR(6)     = 3600.,
+  relaxPtracerFile(6)='rbcs_files/fe_rbc_cold.bin',
+
+  useRBCptrnum(7)    = .TRUE.,
+  tauRelaxPTR(7)     = 3600.,
+  relaxPtracerFile(7)='rbcs_files/don_rbc.bin',
+
+  useRBCptrnum(8)    = .TRUE.,
+  tauRelaxPTR(8)     = 3600.,
+  relaxPtracerFile(8)='rbcs_files/dop_rbc.bin',
+
+  useRBCptrnum(9)    = .TRUE.,
+  tauRelaxPTR(9)     = 3600.,
+#  relaxPtracerFile(9)='phyto_zero.bin',
+
+  useRBCptrnum(10)   = .TRUE.,
+  tauRelaxPTR(10)    = 300.,
+#  relaxPtracerFile(10)='rbcs_files/zeroes.bin',
+
+  useRBCptrnum(11)   = .TRUE.,
+  tauRelaxPTR(11)    = 300.,
+
+  useRBCptrnum(12)   = .TRUE.,
+  tauRelaxPTR(12)    = 300.,
+#  relaxPtracerFile(12) ='rbcs_files/zeroes.bin', 
+
+ &

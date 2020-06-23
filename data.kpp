@@ -1,0 +1,47 @@
+# KPP parameter
+ &KPP_PARM01
+# I/O related parameters
+#` kpp_freq = deltaTClock,
+# kpp_dumpFreq = dumpFreq,
+# kpp_taveFreq = taveFreq,
+ KPPmixingMaps   = .FALSE.,
+ KPPwriteState   = .true.,
+# KPP_ghatUseTotalDiffus = .FALSE.,
+ &
+
+# &KPP_PARM02 
+# General KPP parameters
+# minKPPhbl = delRc(1), #minimum boundary layer depth
+# epsilon = 0.1, #nondimensional extent of surface layer
+# vonk = 0.4, #von Karman constant
+# dB_dz = 5.2E-5 1/s 2, #maximum dB/dz in mixed layer hMix
+# concs = 98.96, 
+# concv = 1.8,
+# &
+
+# &KPP_PARM03
+ #Boundary layer parameters (S/R bldepth)
+# Ricr = 0.3, #critical bulk Richardson number
+# cekman = 0.7, #coefficient for Ekman depth
+# cmonob = 1.0, #coefficient for Monin-Obukhov depth
+# concv = 1.8, #ratio of interior to entrainment depth buoyancy frequency
+# hbf = 1.0, #fraction of depth to which absorbed solar radiation contributes to surface buoyancy forcing
+# &
+
+# &KPP_PARM04
+ #Boundary layer mixing parameters (S/R blmix)
+# cstar = 10.,
+# &
+
+# &KPP_PARM05
+ #Interior mixing parameters (S/R i_iwmix)
+# Riinfty = 0.7, #gradient Richardson number limit for shear instability
+# BVDQcon = -0.2 E-4 1/s 2, #Brunt-Vaisala squared
+# difm0 = 0.005 m 2 /s #viscosity max. due to shear instabiity
+# difs0 = 0.005 m 2 /s #tracer diffusivity max. due to shear instability
+# dift0 = 0.005 m 2 /s #heat diffusivity due to convective instability
+# &
+
+# &iKPP_PAMR06
+ #Double-diffusive mixing parameters (S/R ddmix)
+# &
